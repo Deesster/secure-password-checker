@@ -21,7 +21,7 @@ def check_password_strength(password):
   if re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
     score+=1
   else:
-    feedbeak.append("Add at least one special character.")
+    feedback.append("Add at least one special character.")
   if score <=2:
     strength="Weak"
   elif score <=4:
